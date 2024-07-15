@@ -3,11 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/icons": "^5.3.7",
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "antd": "^5.19.2",
+    "axios": "^1.7.2",
+    "bootstrap": "^5.3.3",
     "lottie-react-web": "2.2.2",
     "react": "^16.14.0",
+    "react-bootstrap": "^2.10.4",
     "react-dom": "^16.14.0",
     "react-redux": "^7.2.6",
     "react-responsive-carousel": "^3.2.22",
@@ -18,11 +26,11 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-  "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
-  "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
-  "test": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts test",
-  "eject": "react-scripts eject"
-},
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
+    "test": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",

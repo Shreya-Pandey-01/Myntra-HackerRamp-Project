@@ -14,10 +14,10 @@ export default function ItemCard( {item , index} ) {
         <div className="item-card" key={index}>
             <div className="item-image">
                 <Link to={`/${item.id}`}>
-                    <img src={(item.images)} alt={item.name}/>
+                    <img src={(item.images[0])} alt={item.name}/>
                 </Link>
                 <div className="rating-detail" > 
-                    {item.rating} <i class="fas fa-star star"></i> | {nFormatter(item.numberOfReviews)}
+                    {item.rating} <i className="fas fa-star star"></i> | {nFormatter(item.numberOfReviews)}
                 </div>
                 <div>
                     <ViewSimilarButton item={item} externalClassName="view-similar-mobile-button" />
@@ -43,7 +43,7 @@ export default function ItemCard( {item , index} ) {
                     onClick={()=> dispatch(addItemToWishlist(item))}
                     style={{display: isWishlisted ? 'none' : 'block'}}
                 >
-                    <i class="far fa-heart heart-add"></i>
+                    <i className="far fa-heart heart-add"></i>
                     &nbsp;
                     WISHLIST
                 </button>
@@ -53,7 +53,7 @@ export default function ItemCard( {item , index} ) {
                     style={{display: !isWishlisted ? 'none' : 'block'}}
                 >
                     <i 
-                        class="fas fa-heart heart-remove"
+                        className="fas fa-heart heart-remove"
                         style={{color: 'red'}}
                     ></i>
                     &nbsp;
@@ -73,13 +73,13 @@ export default function ItemCard( {item , index} ) {
                     onClick={()=> dispatch(addItemToWishlist(item))}
                     style={{display: isWishlisted ? 'none' : 'block'}}
                 >
-                    <i class="far fa-heart heart-add"></i>
+                    <i className="far fa-heart heart-add"></i>
                 </button>
                 <button 
                     onClick={()=> dispatch(removeItemFromWishlist(item))}
                     style={{display: !isWishlisted ? 'none' : 'block'}}
                 >
-                    <i class="fas fa-heart heart-remove"></i>
+                    <i className="fas fa-heart heart-remove"></i>
                 </button>
             </div>
         </div>

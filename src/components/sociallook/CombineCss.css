@@ -1,0 +1,104 @@
+
+.social-lookbook-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+ 
+  .button-primary {
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+ 
+
+  .comment-section {
+    margin-left: 20px; 
+  }
+  
+  .comment {
+    margin-bottom: 10px; 
+  }
+  
+ 
+  .stories-grid, .recommendations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+  /* .recommendation-card{
+    max-width: fit-content;
+    max-height: 2rem;
+  } */
+  .card-image{
+    background-repeat: no-repeat;
+    object-fit: cover;
+    max-height: 200px;
+    max-width: 200px;
+    margin: auto;
+    margin-top: 10px;
+    box-sizing: border-box;
+    object-position: top;
+    
+  }
+  
+  .card_image{
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px rgb(129, 127, 127);
+    box-sizing: border-box;
+
+  }
+  .social-share {
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .social-button {
+    margin-right: 10px;
+  } 
+  .comment-section {
+    max-height: 300px; 
+    /* overflow-y: auto; */
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    margin-top: 0.8rem; 
+  }
+  
+  .comment {
+    margin-bottom: 1rem;
+  }
+  

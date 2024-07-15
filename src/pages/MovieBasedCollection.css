@@ -1,0 +1,39 @@
+.container{
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.title-movie{
+  font-weight: bolder;
+  text-align: center;
+  font-family:monospace;
+  padding: 0.8rem;
+  color: bisque;
+  background-color: rgb(112, 80, 38);
+  margin: 1rem 0rem 3rem 0rem;
+}
+.box-movie {
+  width: 90%;
+  background-color: lightgoldenrodyellow;
+  border: 0.1rem solid rgb(151, 112, 76); 
+  border-radius: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem; 
+  justify-content: center;
+  align-items: center;
+}
+
+.img-movie {
+  width: 100%; 
+  height: auto;
+  padding : 1rem;
+  border-radius: 1.7rem;
+}
+
+.btn-movie{
+  background-color: rgb(142, 77, 40);
+  color: burlywood;
+  margin-bottom: 1rem;
+}

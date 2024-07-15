@@ -12,6 +12,12 @@
 .breadcrumb-item{
     margin: 0px 0px;
 }
+
+.breadcrumb-item a{
+    color: black !important;
+    text-decoration: none;
+}
+
 .breadcrumb-item:hover{
     cursor: pointer;
 }

@@ -8,11 +8,11 @@ export default function Breadcrumb( {addItem} ) {
             link: '/'
         },
         {
-            name: 'Clothings',
+            name: ' Clothings',
             link: '/'
         },
         {
-            name: 'T-Shirts',
+            name: ' T-Shirts',
             link: '/'
         }
     ]
@@ -32,7 +32,7 @@ export default function Breadcrumb( {addItem} ) {
                         
                             <div className="breadcrumb-item" key={index} >
                                 <Link to={bread.link} key={index}>
-                                    {bread.name}
+                                    <b>{bread.name}</b>
                                 </Link>
                             </div>
                         

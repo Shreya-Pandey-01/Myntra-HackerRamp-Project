@@ -33,7 +33,7 @@ export default function Navbar() {
     }
     const bagItemCount = useSelector(state => state.bagStore.length);
     return (
-        <div className=" navbar flex-row" >
+        <div className=" navbar flex-row " >
             <Link to="/">
                 <img 
                     src={logo} 
@@ -51,6 +51,10 @@ export default function Navbar() {
                         )
                     })
                 }
+                <Link to="/More">
+                    <div className="nav-link">MORE</div>
+                </Link> 
+
             </div>
             <div className={isSearchActive ? "search-container flex-row center " : "mobile-hide search-container flex-row center "}>
                 <span 
@@ -59,7 +63,7 @@ export default function Navbar() {
                         dispatch(toggleSearchState(false))
                     }}
                 >
-                    <i class="fas fa-arrow-left"></i>
+                    <i className="fas fa-arrow-left"></i>
                 </span>
                 <Search 
                     className="search-icon" 
@@ -89,7 +93,7 @@ export default function Navbar() {
                         searchQueryHandler(null)
                     }}
                 >
-                    <i class="far fa-times-circle"></i>
+                    <i className="far fa-times-circle"></i>
                 </span>
             </div>
             <div className={isSearchActive ? "mobile-hide action-container flex-row" : "action-container flex-row"}  >

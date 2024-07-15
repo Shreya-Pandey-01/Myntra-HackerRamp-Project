@@ -1,0 +1,82 @@
+.title-fashion{
+    background-color: rgb(197, 86, 145);
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .title-fashion i{
+    color: rgb(246, 215, 215);
+  }
+  
+  .Chatbot {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-window {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .message {
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 5px 0;
+    max-width: 60%;
+    word-wrap: break-word;
+    font-size: 18px;
+    color: black;
+  }
+  
+  .user-message {
+    background-color: #eac5da;
+    align-self: flex-end;
+    text-align: right;
+    color: black;
+  }
+  
+  .bot-message {
+    background-color: #d9f085;
+    align-self: flex-start;
+    color: black;
+  }
+  
+  .input-area {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  .input-area input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 10px;
+    outline: none;
+    font-size: 18px; 
+  }
+  
+  .input-area button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+  }
+  
+  .input-area button:hover {
+    background-color: #0056b3;
+  }
+  

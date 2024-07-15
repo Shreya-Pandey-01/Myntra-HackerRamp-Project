@@ -1,97 +1,125 @@
-.navbar{
-    height : 80px;
-    width : 100%;
-    justify-content : space-between;
-    align-items : center;
+.navbar {
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
     box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
     background-color: #fff;
-    padding : 0 30px;
+    padding: 0 30px;
     z-index: 2;
-}
-.logo{
-    height : 50px;
-    width : 50px;
-}
-
-/******************************
-        Nav Links
-*******************************/
-.nav-link{
-    margin : 0 10px;
-    font-size : 14px;
-    font-weight: bold;
-}
-
-/******************************
-        Search Bar
-*******************************/
-.search-container{
-    position : relative;
-}
-.search-box{
-    border : none;
-    height : 50px;
-    width : 400px;
-    background-color: rgb(245,245,246);
+  }
+  
+  .logo {
+    height: 50px;
+    width: 50px;
+    margin-left: 2rem;
+  }
+  
+  /******************************
+          Nav Links
+  *******************************/
+  .nav-links-container a {
+    color: black !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+  }
+  
+  .nav-links-container a:hover {
+    color: black !important;
+    text-decoration: none !important;
+  }
+  
+  .nav-link {
+    margin: 0 10px;
+    font-size: 14px;
+    color: black !important;
+  }
+  
+  /******************************
+          Search Bar
+  *******************************/
+  .search-container {
+    position: relative;
+  }
+  
+  .search-box {
+    border: none;
+    height: 50px;
+    width: 400px;
+    background-color: rgb(245, 245, 246);
     padding-left: 50px;
-    padding-right : 50px;
-    font-size : 0.9rem;
+    padding-right: 50px;
+    font-size: 0.9rem;
     border-radius: 5px;
-}
-.search-box:focus{
+  }
+  
+  .search-box:focus {
     outline-color: #dbd6d6;
     background-color: rgb(255, 255, 255);
-}
-.search-icon{
-    height : 20px;
-    width : 20px;
+  }
+  
+  .search-icon {
+    height: 20px;
+    width: 20px;
     position: absolute;
     left: 15px;
-}
-.back-from-search{
+  }
+  
+  .back-from-search {
     display: none;
     font-size: 1.5rem;
-    position : absolute;
+    position: absolute;
     color: var(--lighter-color);
-    left : -9vw;
-}
-.hide{
-    display: none!important;
-}
-.clear-query-button{
-    color : var(--lighter-color);
+    left: -9vw;
+  }
+  
+  .hide {
+    display: none !important;
+  }
+  
+  .clear-query-button {
+    color: var(--lighter-color);
     font-size: 1.5rem;
     position: absolute;
     right: 10px;
-}
-/******************************
-            Actions
-*******************************/
-.action-item{
+  }
+  
+  /******************************
+              Actions
+  *******************************/
+  .action-item {
     text-align: center;
-    margin : 0 10px;
-    position : relative;
-}
-.action-item:hover{
+    margin: 0 10px;
+    position: relative;
+  }
+  
+  .action-item:hover {
     cursor: pointer;
-}
-.action-icon{
-    height : 20px;
-    width : 20px;
-}
-.action-text{
+  }
+  
+  .action-icon {
+    height: 20px;
+    width: 20px;
+    margin-right: 2rem;
+  }
+  
+  .action-text {
     font-size: 12px;
-    font-weight:bold;
-}
-.mobile-search-button{
+    font-weight: bold;
+    margin-right: 2rem;
+  }
+  
+  .mobile-search-button {
     display: none;
-}
-.mobile-hide{
+  }
+  
+  .mobile-hide {
     display: flex;
-}
-.bag-item-count{
+  }
+  
+  .bag-item-count {
     position: absolute;
     top: -10px;
     right: -5px;
@@ -104,77 +132,76 @@
     font-size: 10px;
     font-weight: bold;
     color: rgb(255, 255, 255);
-}
-
-
-
-
-
-
-/*****************************   RESPONSIVENESS   ********************************/
-@media screen and (max-width: 1150px){
-    .nav-links-container{
-        display: none;
+  }
+  
+  /*****************************   RESPONSIVENESS   ********************************/
+  @media screen and (max-width: 1150px) {
+    .nav-links-container {
+      display: none;
     }
-    .search-box{
-        width : 500px;
-        height : 40px;
+    .search-box {
+      width: 500px;
+      height: 40px;
     }
-    .search-icon{
-        left: 15px;
+    .search-icon {
+      left: 15px;
     }
-    .clear-query-button{
-        right: 10px;
+    .clear-query-button {
+      right: 10px;
     }
-}
-@media screen and (max-width: 850px){
-    .search-box{
-        width : 300px;
-        height : 40px;
-        padding-left: 50px;
+  }
+  
+  @media screen and (max-width: 850px) {
+    .search-box {
+      width: 300px;
+      height: 40px;
+      padding-left: 50px;
     }
-}
-@media screen and (max-width: 650px){
-    .navbar{
-        height : 60px;
-        padding : 0 10px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .navbar {
+      height: 60px;
+      padding: 0 10px;
     }
-    .logo{
-        height : 40px;
-        width : 40px;
+    .logo {
+      height: 40px;
+      width: 40px;
     }
-    .back-from-search{
-        display: inline-block;
+    .back-from-search {
+      display: inline-block;
     }
-    .mobile-search-button{
-        display: inline-block;
+    .mobile-search-button {
+      display: inline-block;
     }
-    .clear-query-button{
-        right: 10px;
+    .clear-query-button {
+      right: 10px;
     }
-    .action-text{
-        display:none;
+    .action-text {
+      display: none;
     }
-    .action-item{
-        margin : 0px;
+    .action-item {
+      margin: 0px;
     }
-    .action-container{
-        width : 70%;
-        justify-content: space-between;
+    .action-container {
+      width: 70%;
+      justify-content: space-between;
     }
-    .mobile-hide{
-        display: none;
+    .mobile-hide {
+      display: none;
     }
-    .search-box{
-        width : 83vw;
-        height : 35px;
+    .search-box {
+      width: 83vw;
+      height: 35px;
     }
-}
-@media screen and (max-width: 450px){
-    .search-box{
-        width : 80vw;
+  }
+  
+  @media screen and (max-width: 450px) {
+    .search-box {
+      width: 80vw;
     }
-    .back-from-search{
-        left : calc( 80vw - 100vw + 40px )
+    .back-from-search {
+      left: calc(80vw - 100vw + 40px);
     }
-}
+  }
+  
