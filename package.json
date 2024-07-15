@@ -2,7 +2,7 @@
   "name": "myntra",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Shreya-Pandey-01/Myntra-HackerRamp-Project",
+  "homepage":"https://Shreya-Pandey-01/Myntra-HackerRamp-Project"
   "dependencies": {
     "@ant-design/icons": "^5.3.7",
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
